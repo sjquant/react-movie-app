@@ -1,5 +1,6 @@
 import React from "react";
-import { HashRouter } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
+import Home from "./routes/Home";
 import Navigation from "./components/Navigation";
 
 import "./App.css";
@@ -8,7 +9,7 @@ function App() {
   return (
     <HashRouter>
       <Navigation />
-      <div className="app"></div>
+      <Route path="/" exact={true} component={Home} />
     </HashRouter>
   );
 }
