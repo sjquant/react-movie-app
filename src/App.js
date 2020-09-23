@@ -1,8 +1,16 @@
 import React from "react";
+import { HashRouter } from "react-router-dom";
+import Navigation from "./components/Navigation";
+
 import "./App.css";
 
 function App() {
-  return <div className="app"></div>;
+  return (
+    <HashRouter>
+      <Navigation />
+      <div className="app"></div>
+    </HashRouter>
+  );
 }
 
 export default App;
